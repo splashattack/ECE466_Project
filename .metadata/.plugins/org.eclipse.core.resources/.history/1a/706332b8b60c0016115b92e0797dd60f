@@ -1,0 +1,35 @@
+/*
+ * goertzel.c
+ *
+ *  Created on: Apr 27, 2016
+ *      Author: Caleb
+ */
+#include "math.c"
+
+
+
+short calculateFrequency(circBuffer* buffer, short lowerFreq, short upperFreq)
+{
+
+	 for (short freq =  lowerFreq; freq <= upperFreq; freq++)
+	 {
+		 k = round(0.5+(N*target_freq/Fs));
+	     w = (2*pi/N)*k;
+	     cosine = cos(w);
+	     sine = sin(w);
+	     coeff = 2*cosine;
+	     short Q0,Q1,Q2 = 0;
+	     for (short i = 0; i < buffer->end; i++)
+	     {
+	    	 Q0 = coeff * Q1 - Q2 + x((i-1)+j);
+	         Q2 = Q1;
+	         Q1 = Q0;
+	     }
+	     magnitude = sqrt(Q1 * Q1 + Q2 * Q2 - Q1 * Q2 * coeff);
+	     if(magnitude > freqEstimate)
+	     {
+	    	 freqEstimate = magnitude;
+	     }
+	 }
+	 return freqEstimate;
+}
