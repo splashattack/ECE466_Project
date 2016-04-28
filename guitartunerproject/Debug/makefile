@@ -126,7 +126,7 @@ all: guitartunerproject.out
 guitartunerproject.out: $(OBJS) $(CMD_SRCS) $(LIB_SRCS) $(GEN_CMDS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: C5500 Linker'
-	"C:/ti/ccsv5/tools/compiler/c5500_4.4.1/bin/cl55" -v5515 --memory_model=huge -g --define=c5505 --display_error_number --diag_warning=225 --ptrdiff_size=32 -z -m"guitartunerproject.map" --stack_size=0x200 --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c5500_4.4.1/lib" -i"C:/GitRepos/ECE466_Project/guitartunerproject/lib" -i"C:/ti/ccsv5/tools/compiler/c5500_4.4.1/include" --reread_libs --display_error_number --warn_sections --xml_link_info="guitartunerproject_linkInfo.xml" --rom_model --sys_stacksize=0x200 -o "guitartunerproject.out" $(ORDERED_OBJS)
+	"C:/ti/ccsv5/tools/compiler/c5500_4.4.1/bin/cl55" -v5515 --memory_model=huge -g --define=c5505 --display_error_number --diag_warning=225 --ptrdiff_size=32 -z -m"guitartunerproject.map" --stack_size=0x200 --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c5500_4.4.1/lib" -i"C:/Users/Deeds/workspace_v5_5/guitartunerproject/lib" -i"C:/ti/ccsv5/tools/compiler/c5500_4.4.1/include" --reread_libs --display_error_number --warn_sections --xml_link_info="guitartunerproject_linkInfo.xml" --rom_model --sys_stacksize=0x200 -o "guitartunerproject.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
