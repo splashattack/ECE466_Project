@@ -8,7 +8,6 @@ CG_TOOL_ROOT := C:/ti/ccsv5/tools/compiler/c5500_4.4.1
 
 ORDERED_OBJS += \
 $(GEN_CMDS__FLAG) \
-"./usbstk5505_led.obj" \
 "./usbstk5505_i2c.obj" \
 "./usbstk5505_gpio.obj" \
 "./usbstk5505.obj" \
@@ -17,7 +16,6 @@ $(GEN_CMDS__FLAG) \
 "./aic3204_init.obj" \
 "./aic3204.obj" \
 "./PLL.obj" \
-"./LEDFlasher.obj" \
 "../C5505.cmd" \
 "../lib/55xdsph.lib" \
 "../lib/CSLc55x5h.lib" \
@@ -25,7 +23,7 @@ $(GEN_CMDS__FLAG) \
 
 -include ../makefile.init
 
-RM := 
+RM := DEL /F
 RMDIR := RMDIR /S/Q
 
 # All of the sources participating in the build are defined here
@@ -128,15 +126,15 @@ all: guitartunerproject.out
 guitartunerproject.out: $(OBJS) $(CMD_SRCS) $(LIB_SRCS) $(GEN_CMDS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: C5500 Linker'
-	"" -v5515 --memory_model=huge -g --define=c5505 --display_error_number --diag_warning=225 --ptrdiff_size=32 -z -m"guitartunerproject.map" --stack_size=0x200 --heap_size=0x400 -i"/lib" -i"C:/Users/Deeds/workspace_v5_5/guitartunerproject/lib" -i"/include" --reread_libs --display_error_number --warn_sections --xml_link_info="guitartunerproject_linkInfo.xml" --rom_model --sys_stacksize=0x200 -o "guitartunerproject.out" $(ORDERED_OBJS)
+	"C:/ti/ccsv5/tools/compiler/c5500_4.4.1/bin/cl55" -v5515 --memory_model=huge -g --define=c5505 --display_error_number --diag_warning=225 --ptrdiff_size=32 -z -m"guitartunerproject.map" --stack_size=0x200 --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c5500_4.4.1/lib" -i"C:/Users/Deeds/workspace_v5_5/guitartunerproject/lib" -i"C:/ti/ccsv5/tools/compiler/c5500_4.4.1/include" --reread_libs --display_error_number --warn_sections --xml_link_info="guitartunerproject_linkInfo.xml" --rom_model --sys_stacksize=0x200 -o "guitartunerproject.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
 # Other Targets
 clean:
 	-$(RM) $(C5500_EXECUTABLE_OUTPUTS__QUOTED) "guitartunerproject.out"
-	-$(RM) "LEDFlasher.pp" "PLL.pp" "aic3204.pp" "aic3204_init.pp" "main.pp" "stereo.pp" "usbstk5505.pp" "usbstk5505_gpio.pp" "usbstk5505_i2c.pp" "usbstk5505_led.pp" 
-	-$(RM) "LEDFlasher.obj" "PLL.obj" "aic3204.obj" "aic3204_init.obj" "main.obj" "stereo.obj" "usbstk5505.obj" "usbstk5505_gpio.obj" "usbstk5505_i2c.obj" "usbstk5505_led.obj" 
+	-$(RM) "PLL.pp" "aic3204.pp" "aic3204_init.pp" "main.pp" "stereo.pp" "usbstk5505.pp" "usbstk5505_gpio.pp" "usbstk5505_i2c.pp" 
+	-$(RM) "PLL.obj" "aic3204.obj" "aic3204_init.obj" "main.obj" "stereo.obj" "usbstk5505.obj" "usbstk5505_gpio.obj" "usbstk5505_i2c.obj" 
 	-@echo 'Finished clean'
 	-@echo ' '
 

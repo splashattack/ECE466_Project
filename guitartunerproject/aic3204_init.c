@@ -230,8 +230,7 @@ void set_sampling_frequency_and_gain(unsigned int ADCgain)
     I2S0_CR = 0x8010;    // 16-bit word, slave, enable I2C
     I2S0_ICMR = 0x3f;    // Enable interrupts
 
- 	return(0);
-}
+ 	return;
 
 /* ------------------------------------------------------------------------ *
  *                                                                          *

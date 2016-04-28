@@ -62,7 +62,7 @@
  extern Int16 AIC3204_rset( Uint16 regnum, Uint16 regval);
 
 
- extern unsigned long set_sampling_frequency_and_gain(unsigned long SamplingFrequency, unsigned int ADCgain);
+ extern void set_sampling_frequency_and_gain(unsigned int ADCgain);
 
 #endif /*AIC3204_H_*/
 
