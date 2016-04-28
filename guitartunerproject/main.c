@@ -57,12 +57,12 @@
 #include "PLL.h"
 #include "stereo.h"
 
-Int16 left_input;
-Int16 right_input;
-Int16 mono_input;
+short left_input;
+short right_input;
+short mono_input;
 
 
-#define SAMPLES_PER_SECOND 48000
+#define SAMPLES_PER_SECOND 4000
 
 /* New. Gain as a #define */
 /* Use 30 for microphone. Use 0 for line */
@@ -70,8 +70,6 @@ Int16 mono_input;
 
 unsigned long int i = 0;
 
-/* New. Variable for step */
-unsigned int Step = 0; 
 
 
 /* ------------------------------------------------------------------------ *
@@ -93,8 +91,8 @@ void main( void )
     /* Initialise the AIC3204 codec */
 	aic3204_init(); 
 
-	/* Setup sampling frequency and 30dB gain for microphone */
-    set_sampling_frequency_and_gain(SAMPLES_PER_SECOND, GAIN_IN_dB);
+	/* Setup sampling frequency (set to 4khz) and 30dB gain for microphone */
+    set_sampling_frequency_and_gain(GAIN_IN_dB);
 
    
  	for ( i = 0  ; i < SAMPLES_PER_SECOND * 600L  ;i++  )

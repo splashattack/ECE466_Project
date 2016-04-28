@@ -149,11 +149,10 @@ void aic3204_init(void)
  *                                                                          *
  * ------------------------------------------------------------------------ */
 
-unsigned long set_sampling_frequency_and_gain(unsigned long SamplingFrequency, unsigned int ADCgain)
+unsigned long set_sampling_frequency_and_gain(unsigned int ADCgain)
 {
-    unsigned int PLLPR = 0x91; // Default to 48000 Hz 	
+    unsigned int PLLPR = 0xE1; // Default to 4000 Hz
     unsigned int gain;
-    unsigned long output;
 
     if ( ADCgain >= 48)
      {
@@ -164,57 +163,6 @@ unsigned long set_sampling_frequency_and_gain(unsigned long SamplingFrequency, u
     {
      gain = (ADCgain << 1); // Convert 1dB steps to 0.5dB steps
     }
-     
-    switch (SamplingFrequency)
-    {
-     case 48000:
-     	PLLPR = 0x91; // 1001 0001b. PLL on. P = 1, R = 1. 
-     	printf("Sampling frequency 48000 Hz Gain = %2d dB\n", ADCgain);
-     	output = 48000;
-     break;
-     
-     case 24000:
-      	PLLPR = 0xA1; // 1010 0001b. PLL on. P = 2, R = 1.
-      	printf("Sampling frequency 24000 Hz Gain = %2d dB\n", ADCgain);
-      	output = 24000;   
-     break;
-     
-     case 16000:
-     	PLLPR = 0xB1; // 1011 0001b. PLL on. P = 3, R = 1.
-      	printf("Sampling frequency 16000 Hz Gain = %2d dB\n", ADCgain); 
-      	output = 16000;      	
-     break;
-     
-     case 12000:
-        PLLPR = 0xC1; //1100 0001b. PLL on. P = 4, R = 1.
-        printf("Sampling frequency 12000 Hz Gain = %2d dB\n", ADCgain);
-        output = 12000;  
-     break;
-     
-     case 9600:
-     	PLLPR = 0xD1; //1101 0001b. PLL on. P = 5, R = 1.
-       	printf("Sampling frequency 9600 Hz Gain = %2d dB\n", ADCgain); 
-       	output = 9600; 
-     break;
-     
-     case 8000:
-     	PLLPR = 0xE1; //1110 0001b. PLL on. P = 6, R = 1.
-     	printf("Sampling frequency 8000 Hz Gain = %2d dB\n", ADCgain);
-     	output = 8000;  
-     break;   	
-     
-     case 6857:
-     	PLLPR = 0xF1; //1111 0001b. PLL on. P = 7, R = 1.
-     	printf("Sampling frequency 6857 Hz Gain = %2d dB\n", ADCgain);  
-     	output = 6857;    
-     break;
-     
-     default:
-     	PLLPR = 0x91; // 1001 0001b. PLL on. P = 1, R = 1. 
-     	printf("Sampling frequency not recognised. Default to 48000 Hz Gain = %2d dB\n", ADCgain);
-     	output = 48000;  
-     break;
-    } 
  
 
      
@@ -246,7 +194,7 @@ unsigned long set_sampling_frequency_and_gain(unsigned long SamplingFrequency, u
     AIC3204_rset( 11, 0x87 );  // Power up NDAC and set NDAC value to 7
     AIC3204_rset( 12, 0x82 );  // Power up MDAC and set MDAC value to 2
     AIC3204_rset( 18, 0x87 );  // Power up NADC and set NADC value to 7
-    AIC3204_rset( 19, 0x82 );  // Power up MADC and set MADC value to 2
+    AIC3204_rset( 19, 0x84 );  // Power up MADC and set MADC value to 4 This is to achieve our 4khz sampling freq
     /* DAC ROUTING and Power Up */
     AIC3204_rset( 0, 1 );      // Select page 1
     AIC3204_rset( 0x0c, 8 );   // LDAC AFIR routed to HPL
@@ -282,7 +230,7 @@ unsigned long set_sampling_frequency_and_gain(unsigned long SamplingFrequency, u
     I2S0_CR = 0x8010;    // 16-bit word, slave, enable I2C
     I2S0_ICMR = 0x3f;    // Enable interrupts
 
- 	return(output);
+ 	return(0);
 }
 
 /* ------------------------------------------------------------------------ *
