@@ -26,6 +26,6 @@ typedef struct cBuffer
 	short* data;
 } circBuffer;
 
-circBuffer* cbuff_init(int bufferSize);
+circBuffer* cbuff_init(short bufferSize);
 _Bool cbuff_isEmpty(circBuffer* self);
-void cbuff_push(circBuffer* self, int input);
+void cbuff_push(circBuffer* self, short input);

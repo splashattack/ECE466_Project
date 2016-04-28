@@ -1,0 +1,31 @@
+
+**** Build of configuration Debug for project GuitarTuner ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../cirBuffer.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv5/tools/compiler/arm_5.1.1/bin/armcl" -mv6 --code_state=32 --abi=ti_arm9_abi --include_path="C:/ti/ccsv5/tools/compiler/arm_5.1.1/include" -g --diag_warning=225 --display_error_number --diag_wrap=off --preproc_with_compile --preproc_dependency="cirBuffer.pp"  "../cirBuffer.c"
+'Finished building: ../cirBuffer.c'
+' '
+'Building file: ../goertzel.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv5/tools/compiler/arm_5.1.1/bin/armcl" -mv6 --code_state=32 --abi=ti_arm9_abi --include_path="C:/ti/ccsv5/tools/compiler/arm_5.1.1/include" -g --diag_warning=225 --display_error_number --diag_wrap=off --preproc_with_compile --preproc_dependency="goertzel.pp"  "../goertzel.c"
+'Finished building: ../goertzel.c'
+' '
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv5/tools/compiler/arm_5.1.1/bin/armcl" -mv6 --code_state=32 --abi=ti_arm9_abi --include_path="C:/ti/ccsv5/tools/compiler/arm_5.1.1/include" -g --diag_warning=225 --display_error_number --diag_wrap=off --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: GuitarTuner.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv5/tools/compiler/arm_5.1.1/bin/armcl" -mv6 --code_state=32 --abi=ti_arm9_abi -g --diag_warning=225 --display_error_number --diag_wrap=off -z -m"GuitarTuner.map" -i"C:/ti/ccsv5/tools/compiler/arm_5.1.1/lib" -i"C:/ti/ccsv5/tools/compiler/arm_5.1.1/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="GuitarTuner_linkInfo.xml" --rom_model -o "GuitarTuner.out"  "./main.obj" "./goertzel.obj" "./cirBuffer.obj" -l"libc.a" 
+<Linking>
+warning #10366-D: automatic library build: using library "C:\ti\ccsv5\tools\compiler\arm_5.1.1\lib\rtsv6_A_be_tiarm9.lib" for the first time, so it must be built.  This may take a few minutes.
+warning #10247-D: creating output section ".sysmem" without a SECTIONS specification
+warning #10210-D: creating ".stack" section with default size of 0x800; use the -stack option to change the default size
+warning #10210-D: creating ".sysmem" section with default size of 0x800; use the -heap option to change the default size
+'Finished building target: GuitarTuner.out'
+' '
+
+**** Build Finished ****
