@@ -5,21 +5,17 @@
 'Building file: ../PLL.c'
 'Invoking: ARM Compiler'
 "C:/ti/ccsv5/tools/compiler/arm_5.1.1/bin/armcl" -mv6 --code_state=32 --abi=ti_arm9_abi --include_path="C:/ti/ccsv5/tools/compiler/arm_5.1.1/include" -g --diag_warning=225 --display_error_number --diag_wrap=off --preproc_with_compile --preproc_dependency="PLL.pp"  "../PLL.c"
-"../PLL.c", line 69: fatal error #1965: cannot open source file "csl_pll.h"
-1 catastrophic error detected in the compilation of "../PLL.c".
-Compilation terminated.
+"..\C55xx_csl\soc.h", line 88: error #20: identifier "ioport" is undefined
+"..\C55xx_csl\soc.h", line 88: error #258: invalid redeclaration of type name "CSL_GpioRegs" (declared at line 38 of "..\C55xx_csl\cslr_gpio.h")
+"..\C55xx_csl\soc.h", line 88: error #66: expected a ";"
+"..\C55xx_csl\soc.h", line 89: error #20: identifier "ioport" is undefined
+"..\C55xx_csl\soc.h", line 89: error #258: invalid redeclaration of type name "CSL_SysRegs" (declared at line 81 of "..\C55xx_csl\cslr_sysctrl.h")
+"..\C55xx_csl\soc.h", line 89: error #66: expected a ";"
+"..\C55xx_csl/csl_pll.h", line 185: error #20: identifier "CSL_SysRegsOvly" is undefined
 
+7 errors detected in the compilation of "../PLL.c".
 >> Compilation failure
 gmake: *** [PLL.obj] Error 1
-'Building file: ../aic3204.c'
-'Invoking: ARM Compiler'
-"C:/ti/ccsv5/tools/compiler/arm_5.1.1/bin/armcl" -mv6 --code_state=32 --abi=ti_arm9_abi --include_path="C:/ti/ccsv5/tools/compiler/arm_5.1.1/include" -g --diag_warning=225 --display_error_number --diag_wrap=off --preproc_with_compile --preproc_dependency="aic3204.pp"  "../aic3204.c"
-"../aic3204.c", line 58: fatal error #1965: cannot open source file "usbstk5505.h"
-1 catastrophic error detected in the compilation of "../aic3204.c".
-Compilation terminated.
-
->> Compilation failure
-gmake: *** [aic3204.obj] Error 1
 'Building file: ../aic3204_init.c'
 'Invoking: ARM Compiler'
 "C:/ti/ccsv5/tools/compiler/arm_5.1.1/bin/armcl" -mv6 --code_state=32 --abi=ti_arm9_abi --include_path="C:/ti/ccsv5/tools/compiler/arm_5.1.1/include" -g --diag_warning=225 --display_error_number --diag_wrap=off --preproc_with_compile --preproc_dependency="aic3204_init.pp"  "../aic3204_init.c"
@@ -32,9 +28,8 @@ gmake: *** [aic3204_init.obj] Error 1
 'Building file: ../main.c'
 'Invoking: ARM Compiler'
 "C:/ti/ccsv5/tools/compiler/arm_5.1.1/bin/armcl" -mv6 --code_state=32 --abi=ti_arm9_abi --include_path="C:/ti/ccsv5/tools/compiler/arm_5.1.1/include" -g --diag_warning=225 --display_error_number --diag_wrap=off --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
-"../main.c", line 3: fatal error #1965: cannot open source file "aic3204.h"
-1 catastrophic error detected in the compilation of "../main.c".
-Compilation terminated.
+"../main.c", line 35: error #167: too few arguments in function call
+1 error detected in the compilation of "../main.c".
 
 >> Compilation failure
 gmake: *** [main.obj] Error 1
@@ -50,20 +45,128 @@ gmake: *** [usbstk5505.obj] Error 1
 'Building file: ../usbstk5505_gpio.c'
 'Invoking: ARM Compiler'
 "C:/ti/ccsv5/tools/compiler/arm_5.1.1/bin/armcl" -mv6 --code_state=32 --abi=ti_arm9_abi --include_path="C:/ti/ccsv5/tools/compiler/arm_5.1.1/include" -g --diag_warning=225 --display_error_number --diag_wrap=off --preproc_with_compile --preproc_dependency="usbstk5505_gpio.pp"  "../usbstk5505_gpio.c"
-"../usbstk5505_gpio.c", line 55: fatal error #1965: cannot open source file "usbstk5505_gpio.h"
-1 catastrophic error detected in the compilation of "../usbstk5505_gpio.c".
-Compilation terminated.
+"../usbstk5505_gpio.c", line 83: warning #262-D: explicit type is missing ("int" assumed)
+"../usbstk5505_gpio.c", line 83: error #18: expected a ")"
+"../usbstk5505_gpio.c", line 83: warning #193-D: type qualifier is meaningless on cast type
+"../usbstk5505_gpio.c", line 83: error #76: operand of "*" must be a pointer
+"../usbstk5505_gpio.c", line 85: warning #262-D: explicit type is missing ("int" assumed)
+"../usbstk5505_gpio.c", line 85: error #18: expected a ")"
+"../usbstk5505_gpio.c", line 85: warning #193-D: type qualifier is meaningless on cast type
+"../usbstk5505_gpio.c", line 85: error #76: operand of "*" must be a pointer
+"../usbstk5505_gpio.c", line 89: warning #262-D: explicit type is missing ("int" assumed)
+"../usbstk5505_gpio.c", line 89: error #18: expected a ")"
+"../usbstk5505_gpio.c", line 89: warning #193-D: type qualifier is meaningless on cast type
+"../usbstk5505_gpio.c", line 89: error #76: operand of "*" must be a pointer
+"../usbstk5505_gpio.c", line 91: warning #262-D: explicit type is missing ("int" assumed)
+"../usbstk5505_gpio.c", line 91: error #18: expected a ")"
+"../usbstk5505_gpio.c", line 91: warning #193-D: type qualifier is meaningless on cast type
+"../usbstk5505_gpio.c", line 91: error #76: operand of "*" must be a pointer
+"../usbstk5505_gpio.c", line 113: warning #262-D: explicit type is missing ("int" assumed)
+"../usbstk5505_gpio.c", line 113: error #18: expected a ")"
+"../usbstk5505_gpio.c", line 113: warning #193-D: type qualifier is meaningless on cast type
+"../usbstk5505_gpio.c", line 113: error #76: operand of "*" must be a pointer
+"../usbstk5505_gpio.c", line 117: warning #262-D: explicit type is missing ("int" assumed)
+"../usbstk5505_gpio.c", line 117: error #18: expected a ")"
+"../usbstk5505_gpio.c", line 117: warning #193-D: type qualifier is meaningless on cast type
+"../usbstk5505_gpio.c", line 117: error #76: operand of "*" must be a pointer
+"../usbstk5505_gpio.c", line 124: warning #262-D: explicit type is missing ("int" assumed)
+"../usbstk5505_gpio.c", line 124: error #18: expected a ")"
+"../usbstk5505_gpio.c", line 124: warning #193-D: type qualifier is meaningless on cast type
+"../usbstk5505_gpio.c", line 124: error #76: operand of "*" must be a pointer
+"../usbstk5505_gpio.c", line 128: warning #262-D: explicit type is missing ("int" assumed)
+"../usbstk5505_gpio.c", line 128: error #18: expected a ")"
+"../usbstk5505_gpio.c", line 128: warning #193-D: type qualifier is meaningless on cast type
+"../usbstk5505_gpio.c", line 128: error #76: operand of "*" must be a pointer
+"../usbstk5505_gpio.c", line 152: warning #262-D: explicit type is missing ("int" assumed)
+"../usbstk5505_gpio.c", line 152: error #18: expected a ")"
 
+"../usbstk5505_gpio.c", line 152: warning #193-D: type qualifier is meaningless on cast type
 >> Compilation failure
+"../usbstk5505_gpio.c", line 152: error #76: operand of "*" must be a pointer
+"../usbstk5505_gpio.c", line 154: warning #262-D: explicit type is missing ("int" assumed)
+"../usbstk5505_gpio.c", line 154: error #18: expected a ")"
+"../usbstk5505_gpio.c", line 154: warning #193-D: type qualifier is meaningless on cast type
+"../usbstk5505_gpio.c", line 154: error #76: operand of "*" must be a pointer
+20 errors detected in the compilation of "../usbstk5505_gpio.c".
 gmake: *** [usbstk5505_gpio.obj] Error 1
 'Building file: ../usbstk5505_i2c.c'
 'Invoking: ARM Compiler'
 "C:/ti/ccsv5/tools/compiler/arm_5.1.1/bin/armcl" -mv6 --code_state=32 --abi=ti_arm9_abi --include_path="C:/ti/ccsv5/tools/compiler/arm_5.1.1/include" -g --diag_warning=225 --display_error_number --diag_wrap=off --preproc_with_compile --preproc_dependency="usbstk5505_i2c.pp"  "../usbstk5505_i2c.c"
-"../usbstk5505_i2c.c", line 54: fatal error #1965: cannot open source file "usbstk5505_i2c.h"
-1 catastrophic error detected in the compilation of "../usbstk5505_i2c.c".
-Compilation terminated.
+"../usbstk5505_i2c.c", line 68: warning #262-D: explicit type is missing ("int" assumed)
+"../usbstk5505_i2c.c", line 68: error #18: expected a ")"
+"../usbstk5505_i2c.c", line 68: warning #193-D: type qualifier is meaningless on cast type
+"../usbstk5505_i2c.c", line 68: error #76: operand of "*" must be a pointer
+"../usbstk5505_i2c.c", line 69: warning #262-D: explicit type is missing ("int" assumed)
+"../usbstk5505_i2c.c", line 69: error #18: expected a ")"
+"../usbstk5505_i2c.c", line 69: warning #193-D: type qualifier is meaningless on cast type
+"../usbstk5505_i2c.c", line 69: error #76: operand of "*" must be a pointer
+"../usbstk5505_i2c.c", line 70: warning #262-D: explicit type is missing ("int" assumed)
+"../usbstk5505_i2c.c", line 70: error #18: expected a ")"
+"../usbstk5505_i2c.c", line 70: warning #193-D: type qualifier is meaningless on cast type
+"../usbstk5505_i2c.c", line 70: error #76: operand of "*" must be a pointer
+"../usbstk5505_i2c.c", line 71: warning #262-D: explicit type is missing ("int" assumed)
+"../usbstk5505_i2c.c", line 71: error #18: expected a ")"
+"../usbstk5505_i2c.c", line 71: warning #193-D: type qualifier is meaningless on cast type
+"../usbstk5505_i2c.c", line 71: error #76: operand of "*" must be a pointer
+"../usbstk5505_i2c.c", line 73: warning #262-D: explicit type is missing ("int" assumed)
+"../usbstk5505_i2c.c", line 73: error #18: expected a ")"
+"../usbstk5505_i2c.c", line 73: warning #193-D: type qualifier is meaningless on cast type
+"../usbstk5505_i2c.c", line 73: error #76: operand of "*" must be a pointer
+"../usbstk5505_i2c.c", line 85: warning #262-D: explicit type is missing ("int" assumed)
+"../usbstk5505_i2c.c", line 85: error #18: expected a ")"
+"../usbstk5505_i2c.c", line 85: warning #193-D: type qualifier is meaningless on cast type
+"../usbstk5505_i2c.c", line 85: error #76: operand of "*" must be a pointer
+"../usbstk5505_i2c.c", line 117: warning #262-D: explicit type is missing ("int" assumed)
+"../usbstk5505_i2c.c", line 117: error #18: expected a ")"
+"../usbstk5505_i2c.c", line 117: warning #193-D: type qualifier is meaningless on cast type
+"../usbstk5505_i2c.c", line 117: error #76: operand of "*" must be a pointer
+"../usbstk5505_i2c.c", line 118: warning #262-D: explicit type is missing ("int" assumed)
+"../usbstk5505_i2c.c", line 118: error #18: expected a ")"
+"../usbstk5505_i2c.c", line 118: warning #193-D: type qualifier is meaningless on cast type
+"../usbstk5505_i2c.c", line 118: error #76: operand of "*" must be a pointer
+"../usbstk5505_i2c.c", line 119: warning #262-D: explicit type is missing ("int" assumed)
+"../usbstk5505_i2c.c", line 119: error #18: expected a ")"
+"../usbstk5505_i2c.c", line 119: warning #193-D: type qualifier is meaningless on cast type
+"../usbstk5505_i2c.c", line 119: error #76: operand of "*" must be a pointer
+"../usbstk5505_i2c.c", line 129: warning #262-D: explicit type is missing ("int" assumed)
+"../usbstk5505_i2c.c", line 129: error #18: expected a ")"
+"../usbstk5505_i2c.c", line 129: warning #193-D: type qualifier is meaningless on cast type
+"../usbstk5505_i2c.c", line 129: error #76: operand of "*" must be a pointer
+"../usbstk5505_i2c.c", line 139: warning #262-D: explicit type is missing ("int" assumed)
+"../usbstk5505_i2c.c", line 139: error #18: expected a ")"
+"../usbstk5505_i2c.c", line 139: warning #193-D: type qualifier is meaningless on cast type
+"../usbstk5505_i2c.c", line 139: error #76: operand of "*" must be a pointer
+"../usbstk5505_i2c.c", line 142: warning #262-D: explicit type is missing ("int" assumed)
+"../usbstk5505_i2c.c", line 142: error #18: expected a ")"
+"../usbstk5505_i2c.c", line 142: warning #193-D: type qualifier is meaningless on cast type
+"../usbstk5505_i2c.c", line 142: error #76: operand of "*" must be a pointer
+"../usbstk5505_i2c.c", line 168: warning #262-D: explicit type is missing ("int" assumed)
+"../usbstk5505_i2c.c", line 168: error #18: expected a ")"
+"../usbstk5505_i2c.c", line 168: warning #193-D: type qualifier is meaningless on cast type
+"../usbstk5505_i2c.c", line 168: error #76: operand of "*" must be a pointer
+"../usbstk5505_i2c.c", line 169: warning #262-D: explicit type is missing ("int" assumed)
+"../usbstk5505_i2c.c", line 169: error #18: expected a ")"
+"../usbstk5505_i2c.c", line 169: warning #193-D: type qualifier is meaningless on cast type
+"../usbstk5505_i2c.c", line 169: error #76: operand of "*" must be a pointer
+"../usbstk5505_i2c.c", line 170: warning #262-D: explicit type is missing ("int" assumed)
+"../usbstk5505_i2c.c", line 170: error #18: expected a ")"
+"../usbstk5505_i2c.c", line 170: warning #193-D: type qualifier is meaningless on cast type
+"../usbstk5505_i2c.c", line 170: error #76: operand of "*" must be a pointer
+"../usbstk5505_i2c.c", line 189: warning #262-D: explicit type is missing ("int" assumed)
+"../usbstk5505_i2c.c", line 189: error #18: expected a ")"
+"../usbstk5505_i2c.c", line 189: warning #193-D: type qualifier is meaningless on cast type
 
 >> Compilation failure
+"../usbstk5505_i2c.c", line 189: error #76: operand of "*" must be a pointer
+"../usbstk5505_i2c.c", line 191: warning #262-D: explicit type is missing ("int" assumed)
+"../usbstk5505_i2c.c", line 191: error #18: expected a ")"
+"../usbstk5505_i2c.c", line 191: warning #193-D: type qualifier is meaningless on cast type
+"../usbstk5505_i2c.c", line 191: error #76: operand of "*" must be a pointer
+"../usbstk5505_i2c.c", line 194: warning #262-D: explicit type is missing ("int" assumed)
+"../usbstk5505_i2c.c", line 194: error #18: expected a ")"
+"../usbstk5505_i2c.c", line 194: warning #193-D: type qualifier is meaningless on cast type
+"../usbstk5505_i2c.c", line 194: error #76: operand of "*" must be a pointer
+36 errors detected in the compilation of "../usbstk5505_i2c.c".
 gmake: *** [usbstk5505_i2c.obj] Error 1
 gmake: Target `all' not remade because of errors.
 

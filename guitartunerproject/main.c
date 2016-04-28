@@ -56,6 +56,9 @@
 #include "aic3204.h"
 #include "PLL.h"
 #include "stereo.h"
+#include "coeffs.h"
+#include "cirBuffer.h"
+#include "goertzel.h"
 
 short left_input;
 short right_input;
@@ -63,10 +66,12 @@ short mono_input;
 
 
 #define SAMPLES_PER_SECOND 4000
+#define BUFFER_SIZE 4000
 
 /* New. Gain as a #define */
 /* Use 30 for microphone. Use 0 for line */
 #define GAIN_IN_dB 30
+
 
 unsigned long int i = 0;
 
@@ -94,19 +99,19 @@ void main( void )
 	/* Setup sampling frequency (set to 4khz) and 30dB gain for microphone */
     set_sampling_frequency_and_gain(GAIN_IN_dB);
 
-   
- 	for ( i = 0  ; i < SAMPLES_PER_SECOND * 600L  ;i++  )
+    circBuffer* buffer = cbuff_init(BUFFER_SIZE);
+ 	while(1) // this loop should occur at the same rate as the sampling frequency
  	{
 
      aic3204_codec_read(&left_input, &right_input); // Configured for one interrupt per two channels.
 
      mono_input = stereo_to_mono(left_input, right_input);
+     cbuff_push(buffer, mono_input);
+     if (buffer->end == BUFFER_SIZE-1)
+     {
+    	 //get frequency
 
-
-
-
-
-
+     }
 
  	}
 

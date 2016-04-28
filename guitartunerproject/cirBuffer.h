@@ -14,7 +14,7 @@
 #define FALSE 0;
 
 
-#endif /* CIRBUFFER_H_ */
+
 
 
 typedef struct cBuffer
@@ -29,3 +29,4 @@ typedef struct cBuffer
 circBuffer* cbuff_init(short bufferSize);
 _Bool cbuff_isEmpty(circBuffer* self);
 void cbuff_push(circBuffer* self, short input);
+#endif /* CIRBUFFER_H_ */

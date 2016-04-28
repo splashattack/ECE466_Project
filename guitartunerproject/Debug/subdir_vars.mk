@@ -10,6 +10,8 @@ C_SRCS += \
 ../PLL.c \
 ../aic3204.c \
 ../aic3204_init.c \
+../cirBuffer.c \
+../goertzel.c \
 ../main.c \
 ../stereo.c \
 ../usbstk5505.c \
@@ -20,6 +22,8 @@ OBJS += \
 ./PLL.obj \
 ./aic3204.obj \
 ./aic3204_init.obj \
+./cirBuffer.obj \
+./goertzel.obj \
 ./main.obj \
 ./stereo.obj \
 ./usbstk5505.obj \
@@ -30,6 +34,8 @@ C_DEPS += \
 ./PLL.pp \
 ./aic3204.pp \
 ./aic3204_init.pp \
+./cirBuffer.pp \
+./goertzel.pp \
 ./main.pp \
 ./stereo.pp \
 ./usbstk5505.pp \
@@ -40,6 +46,8 @@ C_DEPS__QUOTED += \
 "PLL.pp" \
 "aic3204.pp" \
 "aic3204_init.pp" \
+"cirBuffer.pp" \
+"goertzel.pp" \
 "main.pp" \
 "stereo.pp" \
 "usbstk5505.pp" \
@@ -50,6 +58,8 @@ OBJS__QUOTED += \
 "PLL.obj" \
 "aic3204.obj" \
 "aic3204_init.obj" \
+"cirBuffer.obj" \
+"goertzel.obj" \
 "main.obj" \
 "stereo.obj" \
 "usbstk5505.obj" \
@@ -60,6 +70,8 @@ C_SRCS__QUOTED += \
 "../PLL.c" \
 "../aic3204.c" \
 "../aic3204_init.c" \
+"../cirBuffer.c" \
+"../goertzel.c" \
 "../main.c" \
 "../stereo.c" \
 "../usbstk5505.c" \
