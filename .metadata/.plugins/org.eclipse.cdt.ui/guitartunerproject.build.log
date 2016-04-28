@@ -1,0 +1,23 @@
+
+**** Build of configuration Debug for project guitartunerproject ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../aic3204_init.c'
+'Invoking: C5500 Compiler'
+"C:/ti/ccsv5/tools/compiler/c5500_4.4.1/bin/cl55" -v5515 --memory_model=huge -g --include_path="C:/ti/ccsv5/tools/compiler/c5500_4.4.1/include" --include_path="C:/GitRepos/ECE466_Project/guitartunerproject/C55xx_csl" --include_path="C:/GitRepos/ECE466_Project/guitartunerproject/inc" --include_path="C:/GitRepos/ECE466_Project/guitartunerproject/usbstk_bsl" --define=c5505 --display_error_number --diag_warning=225 --ptrdiff_size=32 --preproc_with_compile --preproc_dependency="aic3204_init.pp"  "../aic3204_init.c"
+"../aic3204_init.c", line 152: error #148: declaration is incompatible with "unsigned long set_sampling_frequency_and_gain(unsigned long, unsigned int)" (declared at line 65 of "C:/GitRepos/ECE466_Project/guitartunerproject/inc/aic3204.h")
+
+1 error detected in the compilation of "../aic3204_init.c".
+>> Compilation failure
+gmake: *** [aic3204_init.obj] Error 1
+'Building file: ../main.c'
+'Invoking: C5500 Compiler'
+"C:/ti/ccsv5/tools/compiler/c5500_4.4.1/bin/cl55" -v5515 --memory_model=huge -g --include_path="C:/ti/ccsv5/tools/compiler/c5500_4.4.1/include" --include_path="C:/GitRepos/ECE466_Project/guitartunerproject/C55xx_csl" --include_path="C:/GitRepos/ECE466_Project/guitartunerproject/inc" --include_path="C:/GitRepos/ECE466_Project/guitartunerproject/usbstk_bsl" --define=c5505 --display_error_number --diag_warning=225 --ptrdiff_size=32 --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
+"../main.c", line 95: error #167: too few arguments in function call
+1 error detected in the compilation of "../main.c".
+
+>> Compilation failure
+gmake: *** [main.obj] Error 1
+gmake: Target `all' not remade because of errors.
+
+**** Build Finished ****

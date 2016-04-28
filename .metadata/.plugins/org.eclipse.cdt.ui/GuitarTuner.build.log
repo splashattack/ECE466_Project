@@ -2,30 +2,69 @@
 **** Build of configuration Debug for project GuitarTuner ****
 
 "C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-'Building file: ../cirBuffer.c'
+'Building file: ../PLL.c'
 'Invoking: ARM Compiler'
-"C:/ti/ccsv5/tools/compiler/arm_5.1.1/bin/armcl" -mv6 --code_state=32 --abi=ti_arm9_abi --include_path="C:/ti/ccsv5/tools/compiler/arm_5.1.1/include" -g --diag_warning=225 --display_error_number --diag_wrap=off --preproc_with_compile --preproc_dependency="cirBuffer.pp"  "../cirBuffer.c"
-'Finished building: ../cirBuffer.c'
-' '
-'Building file: ../goertzel.c'
+"C:/ti/ccsv5/tools/compiler/arm_5.1.1/bin/armcl" -mv6 --code_state=32 --abi=ti_arm9_abi --include_path="C:/ti/ccsv5/tools/compiler/arm_5.1.1/include" -g --diag_warning=225 --display_error_number --diag_wrap=off --preproc_with_compile --preproc_dependency="PLL.pp"  "../PLL.c"
+"../PLL.c", line 69: fatal error #1965: cannot open source file "csl_pll.h"
+1 catastrophic error detected in the compilation of "../PLL.c".
+Compilation terminated.
+
+>> Compilation failure
+gmake: *** [PLL.obj] Error 1
+'Building file: ../aic3204.c'
 'Invoking: ARM Compiler'
-"C:/ti/ccsv5/tools/compiler/arm_5.1.1/bin/armcl" -mv6 --code_state=32 --abi=ti_arm9_abi --include_path="C:/ti/ccsv5/tools/compiler/arm_5.1.1/include" -g --diag_warning=225 --display_error_number --diag_wrap=off --preproc_with_compile --preproc_dependency="goertzel.pp"  "../goertzel.c"
-'Finished building: ../goertzel.c'
-' '
+"C:/ti/ccsv5/tools/compiler/arm_5.1.1/bin/armcl" -mv6 --code_state=32 --abi=ti_arm9_abi --include_path="C:/ti/ccsv5/tools/compiler/arm_5.1.1/include" -g --diag_warning=225 --display_error_number --diag_wrap=off --preproc_with_compile --preproc_dependency="aic3204.pp"  "../aic3204.c"
+"../aic3204.c", line 58: fatal error #1965: cannot open source file "usbstk5505.h"
+1 catastrophic error detected in the compilation of "../aic3204.c".
+Compilation terminated.
+
+>> Compilation failure
+gmake: *** [aic3204.obj] Error 1
+'Building file: ../aic3204_init.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv5/tools/compiler/arm_5.1.1/bin/armcl" -mv6 --code_state=32 --abi=ti_arm9_abi --include_path="C:/ti/ccsv5/tools/compiler/arm_5.1.1/include" -g --diag_warning=225 --display_error_number --diag_wrap=off --preproc_with_compile --preproc_dependency="aic3204_init.pp"  "../aic3204_init.c"
+"../aic3204_init.c", line 63: fatal error #1965: cannot open source file "usbstk5505.h"
+1 catastrophic error detected in the compilation of "../aic3204_init.c".
+Compilation terminated.
+
+>> Compilation failure
+gmake: *** [aic3204_init.obj] Error 1
 'Building file: ../main.c'
 'Invoking: ARM Compiler'
 "C:/ti/ccsv5/tools/compiler/arm_5.1.1/bin/armcl" -mv6 --code_state=32 --abi=ti_arm9_abi --include_path="C:/ti/ccsv5/tools/compiler/arm_5.1.1/include" -g --diag_warning=225 --display_error_number --diag_wrap=off --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
-'Finished building: ../main.c'
-' '
-'Building target: GuitarTuner.out'
-'Invoking: ARM Linker'
-"C:/ti/ccsv5/tools/compiler/arm_5.1.1/bin/armcl" -mv6 --code_state=32 --abi=ti_arm9_abi -g --diag_warning=225 --display_error_number --diag_wrap=off -z -m"GuitarTuner.map" -i"C:/ti/ccsv5/tools/compiler/arm_5.1.1/lib" -i"C:/ti/ccsv5/tools/compiler/arm_5.1.1/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="GuitarTuner_linkInfo.xml" --rom_model -o "GuitarTuner.out"  "./main.obj" "./goertzel.obj" "./cirBuffer.obj" -l"libc.a" 
-<Linking>
-warning #10366-D: automatic library build: using library "C:\ti\ccsv5\tools\compiler\arm_5.1.1\lib\rtsv6_A_be_tiarm9.lib" for the first time, so it must be built.  This may take a few minutes.
-warning #10247-D: creating output section ".sysmem" without a SECTIONS specification
-warning #10210-D: creating ".stack" section with default size of 0x800; use the -stack option to change the default size
-warning #10210-D: creating ".sysmem" section with default size of 0x800; use the -heap option to change the default size
-'Finished building target: GuitarTuner.out'
-' '
+"../main.c", line 3: fatal error #1965: cannot open source file "aic3204.h"
+1 catastrophic error detected in the compilation of "../main.c".
+Compilation terminated.
+
+>> Compilation failure
+gmake: *** [main.obj] Error 1
+'Building file: ../usbstk5505.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv5/tools/compiler/arm_5.1.1/bin/armcl" -mv6 --code_state=32 --abi=ti_arm9_abi --include_path="C:/ti/ccsv5/tools/compiler/arm_5.1.1/include" -g --diag_warning=225 --display_error_number --diag_wrap=off --preproc_with_compile --preproc_dependency="usbstk5505.pp"  "../usbstk5505.c"
+"../usbstk5505.c", line 55: fatal error #1965: cannot open source file "usbstk5505.h"
+1 catastrophic error detected in the compilation of "../usbstk5505.c".
+Compilation terminated.
+
+>> Compilation failure
+gmake: *** [usbstk5505.obj] Error 1
+'Building file: ../usbstk5505_gpio.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv5/tools/compiler/arm_5.1.1/bin/armcl" -mv6 --code_state=32 --abi=ti_arm9_abi --include_path="C:/ti/ccsv5/tools/compiler/arm_5.1.1/include" -g --diag_warning=225 --display_error_number --diag_wrap=off --preproc_with_compile --preproc_dependency="usbstk5505_gpio.pp"  "../usbstk5505_gpio.c"
+"../usbstk5505_gpio.c", line 55: fatal error #1965: cannot open source file "usbstk5505_gpio.h"
+1 catastrophic error detected in the compilation of "../usbstk5505_gpio.c".
+Compilation terminated.
+
+>> Compilation failure
+gmake: *** [usbstk5505_gpio.obj] Error 1
+'Building file: ../usbstk5505_i2c.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv5/tools/compiler/arm_5.1.1/bin/armcl" -mv6 --code_state=32 --abi=ti_arm9_abi --include_path="C:/ti/ccsv5/tools/compiler/arm_5.1.1/include" -g --diag_warning=225 --display_error_number --diag_wrap=off --preproc_with_compile --preproc_dependency="usbstk5505_i2c.pp"  "../usbstk5505_i2c.c"
+"../usbstk5505_i2c.c", line 54: fatal error #1965: cannot open source file "usbstk5505_i2c.h"
+1 catastrophic error detected in the compilation of "../usbstk5505_i2c.c".
+Compilation terminated.
+
+>> Compilation failure
+gmake: *** [usbstk5505_i2c.obj] Error 1
+gmake: Target `all' not remade because of errors.
 
 **** Build Finished ****

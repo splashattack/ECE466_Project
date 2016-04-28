@@ -507,3 +507,6 @@ Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.ti.ccstudio.
 !MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.dsf.ui', id='AUTOGEN:::org.eclipse.cdt.dsf.debug.ui.disassemblyRulerActions/org.eclipse.debug.ui.actions.RulerAddBreakpointAction'
 !SUBENTRY 1 org.eclipse.ui 2 0 2016-04-28 15:20:39.946
 !MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.dsf.ui', id='org.eclipse.cdt.dsf.debug.ui.disassembly.commands.rulerToggleBreakpoint'
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-04-28 15:59:57.031
+!MESSAGE Indexed 'guitartunerproject' (8 sources, 44 headers) in 1.09 sec: 1,053 declarations; 1,342 references; 0 unresolved inclusions; 54 syntax errors; 9 unresolved names (0.37%)

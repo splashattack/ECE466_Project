@@ -2915,3 +2915,236 @@ warning #10210-D: creating ".sysmem" section with default size of 0x800; use the
 ' '
 
 **** Build Finished ****
+
+**** Build of configuration Debug for project GuitarTuner ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../PLL.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv5/tools/compiler/arm_5.1.1/bin/armcl" -mv6 --code_state=32 --abi=ti_arm9_abi --include_path="C:/ti/ccsv5/tools/compiler/arm_5.1.1/include" -g --diag_warning=225 --display_error_number --diag_wrap=off --preproc_with_compile --preproc_dependency="PLL.pp"  "../PLL.c"
+"../PLL.c", line 69: fatal error #1965: cannot open source file "csl_pll.h"
+1 catastrophic error detected in the compilation of "../PLL.c".
+Compilation terminated.
+
+>> Compilation failure
+gmake: *** [PLL.obj] Error 1
+'Building file: ../aic3204.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv5/tools/compiler/arm_5.1.1/bin/armcl" -mv6 --code_state=32 --abi=ti_arm9_abi --include_path="C:/ti/ccsv5/tools/compiler/arm_5.1.1/include" -g --diag_warning=225 --display_error_number --diag_wrap=off --preproc_with_compile --preproc_dependency="aic3204.pp"  "../aic3204.c"
+"../aic3204.c", line 58: fatal error #1965: cannot open source file "usbstk5505.h"
+1 catastrophic error detected in the compilation of "../aic3204.c".
+Compilation terminated.
+
+>> Compilation failure
+gmake: *** [aic3204.obj] Error 1
+'Building file: ../aic3204_init.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv5/tools/compiler/arm_5.1.1/bin/armcl" -mv6 --code_state=32 --abi=ti_arm9_abi --include_path="C:/ti/ccsv5/tools/compiler/arm_5.1.1/include" -g --diag_warning=225 --display_error_number --diag_wrap=off --preproc_with_compile --preproc_dependency="aic3204_init.pp"  "../aic3204_init.c"
+"../aic3204_init.c", line 63: fatal error #1965: cannot open source file "usbstk5505.h"
+1 catastrophic error detected in the compilation of "../aic3204_init.c".
+Compilation terminated.
+
+>> Compilation failure
+gmake: *** [aic3204_init.obj] Error 1
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv5/tools/compiler/arm_5.1.1/bin/armcl" -mv6 --code_state=32 --abi=ti_arm9_abi --include_path="C:/ti/ccsv5/tools/compiler/arm_5.1.1/include" -g --diag_warning=225 --display_error_number --diag_wrap=off --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
+"../main.c", line 2: fatal error #1965: cannot open source file "usbstk5505.h"
+1 catastrophic error detected in the compilation of "../main.c".
+Compilation terminated.
+
+>> Compilation failure
+gmake: *** [main.obj] Error 1
+'Building file: ../stereo.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv5/tools/compiler/arm_5.1.1/bin/armcl" -mv6 --code_state=32 --abi=ti_arm9_abi --include_path="C:/ti/ccsv5/tools/compiler/arm_5.1.1/include" -g --diag_warning=225 --display_error_number --diag_wrap=off --preproc_with_compile --preproc_dependency="stereo.pp"  "../stereo.c"
+'Finished building: ../stereo.c'
+' '
+'Building file: ../usbstk5505.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv5/tools/compiler/arm_5.1.1/bin/armcl" -mv6 --code_state=32 --abi=ti_arm9_abi --include_path="C:/ti/ccsv5/tools/compiler/arm_5.1.1/include" -g --diag_warning=225 --display_error_number --diag_wrap=off --preproc_with_compile --preproc_dependency="usbstk5505.pp"  "../usbstk5505.c"
+"../usbstk5505.c", line 55: fatal error #1965: cannot open source file "usbstk5505.h"
+1 catastrophic error detected in the compilation of "../usbstk5505.c".
+Compilation terminated.
+
+>> Compilation failure
+gmake: *** [usbstk5505.obj] Error 1
+'Building file: ../usbstk5505_gpio.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv5/tools/compiler/arm_5.1.1/bin/armcl" -mv6 --code_state=32 --abi=ti_arm9_abi --include_path="C:/ti/ccsv5/tools/compiler/arm_5.1.1/include" -g --diag_warning=225 --display_error_number --diag_wrap=off --preproc_with_compile --preproc_dependency="usbstk5505_gpio.pp"  "../usbstk5505_gpio.c"
+"../usbstk5505_gpio.c", line 55: fatal error #1965: cannot open source file "usbstk5505_gpio.h"
+1 catastrophic error detected in the compilation of "../usbstk5505_gpio.c".
+Compilation terminated.
+
+>> Compilation failure
+gmake: *** [usbstk5505_gpio.obj] Error 1
+'Building file: ../usbstk5505_i2c.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv5/tools/compiler/arm_5.1.1/bin/armcl" -mv6 --code_state=32 --abi=ti_arm9_abi --include_path="C:/ti/ccsv5/tools/compiler/arm_5.1.1/include" -g --diag_warning=225 --display_error_number --diag_wrap=off --preproc_with_compile --preproc_dependency="usbstk5505_i2c.pp"  "../usbstk5505_i2c.c"
+"../usbstk5505_i2c.c", line 54: fatal error #1965: cannot open source file "usbstk5505_i2c.h"
+1 catastrophic error detected in the compilation of "../usbstk5505_i2c.c".
+Compilation terminated.
+
+>> Compilation failure
+gmake: *** [usbstk5505_i2c.obj] Error 1
+gmake: Target `all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project guitartunerproject ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k clean 
+DEL /F  "guitartunerproject.out"
+Could Not Find C:\GitRepos\ECE466_Project\guitartunerproject\Debug\guitartunerproject.out
+DEL /F "PLL.pp" "aic3204.pp" "aic3204_init.pp" "main.pp" "stereo.pp" "usbstk5505.pp" "usbstk5505_gpio.pp" "usbstk5505_i2c.pp" 
+DEL /F "PLL.obj" "aic3204.obj" "aic3204_init.obj" "main.obj" "stereo.obj" "usbstk5505.obj" "usbstk5505_gpio.obj" "usbstk5505_i2c.obj" 
+'Finished clean'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project guitartunerproject ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../PLL.c'
+'Invoking: C5500 Compiler'
+"C:/ti/ccsv5/tools/compiler/c5500_4.4.1/bin/cl55" -v5515 --memory_model=huge -g --include_path="C:/ti/ccsv5/tools/compiler/c5500_4.4.1/include" --include_path="C:/GitRepos/ECE466_Project/guitartunerproject/C55xx_csl" --include_path="C:/GitRepos/ECE466_Project/guitartunerproject/inc" --include_path="C:/GitRepos/ECE466_Project/guitartunerproject/usbstk_bsl" --define=c5505 --display_error_number --diag_warning=225 --ptrdiff_size=32 --preproc_with_compile --preproc_dependency="PLL.pp"  "../PLL.c"
+'Finished building: ../PLL.c'
+' '
+'Building file: ../aic3204.c'
+'Invoking: C5500 Compiler'
+"C:/ti/ccsv5/tools/compiler/c5500_4.4.1/bin/cl55" -v5515 --memory_model=huge -g --include_path="C:/ti/ccsv5/tools/compiler/c5500_4.4.1/include" --include_path="C:/GitRepos/ECE466_Project/guitartunerproject/C55xx_csl" --include_path="C:/GitRepos/ECE466_Project/guitartunerproject/inc" --include_path="C:/GitRepos/ECE466_Project/guitartunerproject/usbstk_bsl" --define=c5505 --display_error_number --diag_warning=225 --ptrdiff_size=32 --preproc_with_compile --preproc_dependency="aic3204.pp"  "../aic3204.c"
+'Finished building: ../aic3204.c'
+' '
+'Building file: ../aic3204_init.c'
+'Invoking: C5500 Compiler'
+"C:/ti/ccsv5/tools/compiler/c5500_4.4.1/bin/cl55" -v5515 --memory_model=huge -g --include_path="C:/ti/ccsv5/tools/compiler/c5500_4.4.1/include" --include_path="C:/GitRepos/ECE466_Project/guitartunerproject/C55xx_csl" --include_path="C:/GitRepos/ECE466_Project/guitartunerproject/inc" --include_path="C:/GitRepos/ECE466_Project/guitartunerproject/usbstk_bsl" --define=c5505 --display_error_number --diag_warning=225 --ptrdiff_size=32 --preproc_with_compile --preproc_dependency="aic3204_init.pp"  "../aic3204_init.c"
+"../aic3204_init.c", line 152: error #148: declaration is incompatible with "unsigned long set_sampling_frequency_and_gain(unsigned long, unsigned int)" (declared at line 65 of "C:/GitRepos/ECE466_Project/guitartunerproject/inc/aic3204.h")
+
+1 error detected in the compilation of "../aic3204_init.c".
+>> Compilation failure
+gmake: *** [aic3204_init.obj] Error 1
+'Building file: ../main.c'
+'Invoking: C5500 Compiler'
+"C:/ti/ccsv5/tools/compiler/c5500_4.4.1/bin/cl55" -v5515 --memory_model=huge -g --include_path="C:/ti/ccsv5/tools/compiler/c5500_4.4.1/include" --include_path="C:/GitRepos/ECE466_Project/guitartunerproject/C55xx_csl" --include_path="C:/GitRepos/ECE466_Project/guitartunerproject/inc" --include_path="C:/GitRepos/ECE466_Project/guitartunerproject/usbstk_bsl" --define=c5505 --display_error_number --diag_warning=225 --ptrdiff_size=32 --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
+"../main.c", line 95: error #167: too few arguments in function call
+
+1 error detected in the compilation of "../main.c".
+>> Compilation failure
+gmake: *** [main.obj] Error 1
+'Building file: ../stereo.c'
+'Invoking: C5500 Compiler'
+"C:/ti/ccsv5/tools/compiler/c5500_4.4.1/bin/cl55" -v5515 --memory_model=huge -g --include_path="C:/ti/ccsv5/tools/compiler/c5500_4.4.1/include" --include_path="C:/GitRepos/ECE466_Project/guitartunerproject/C55xx_csl" --include_path="C:/GitRepos/ECE466_Project/guitartunerproject/inc" --include_path="C:/GitRepos/ECE466_Project/guitartunerproject/usbstk_bsl" --define=c5505 --display_error_number --diag_warning=225 --ptrdiff_size=32 --preproc_with_compile --preproc_dependency="stereo.pp"  "../stereo.c"
+'Finished building: ../stereo.c'
+' '
+'Building file: ../usbstk5505.c'
+'Invoking: C5500 Compiler'
+"C:/ti/ccsv5/tools/compiler/c5500_4.4.1/bin/cl55" -v5515 --memory_model=huge -g --include_path="C:/ti/ccsv5/tools/compiler/c5500_4.4.1/include" --include_path="C:/GitRepos/ECE466_Project/guitartunerproject/C55xx_csl" --include_path="C:/GitRepos/ECE466_Project/guitartunerproject/inc" --include_path="C:/GitRepos/ECE466_Project/guitartunerproject/usbstk_bsl" --define=c5505 --display_error_number --diag_warning=225 --ptrdiff_size=32 --preproc_with_compile --preproc_dependency="usbstk5505.pp"  "../usbstk5505.c"
+'Finished building: ../usbstk5505.c'
+' '
+'Building file: ../usbstk5505_gpio.c'
+'Invoking: C5500 Compiler'
+"C:/ti/ccsv5/tools/compiler/c5500_4.4.1/bin/cl55" -v5515 --memory_model=huge -g --include_path="C:/ti/ccsv5/tools/compiler/c5500_4.4.1/include" --include_path="C:/GitRepos/ECE466_Project/guitartunerproject/C55xx_csl" --include_path="C:/GitRepos/ECE466_Project/guitartunerproject/inc" --include_path="C:/GitRepos/ECE466_Project/guitartunerproject/usbstk_bsl" --define=c5505 --display_error_number --diag_warning=225 --ptrdiff_size=32 --preproc_with_compile --preproc_dependency="usbstk5505_gpio.pp"  "../usbstk5505_gpio.c"
+'Finished building: ../usbstk5505_gpio.c'
+' '
+'Building file: ../usbstk5505_i2c.c'
+'Invoking: C5500 Compiler'
+"C:/ti/ccsv5/tools/compiler/c5500_4.4.1/bin/cl55" -v5515 --memory_model=huge -g --include_path="C:/ti/ccsv5/tools/compiler/c5500_4.4.1/include" --include_path="C:/GitRepos/ECE466_Project/guitartunerproject/C55xx_csl" --include_path="C:/GitRepos/ECE466_Project/guitartunerproject/inc" --include_path="C:/GitRepos/ECE466_Project/guitartunerproject/usbstk_bsl" --define=c5505 --display_error_number --diag_warning=225 --ptrdiff_size=32 --preproc_with_compile --preproc_dependency="usbstk5505_i2c.pp"  "../usbstk5505_i2c.c"
+'Finished building: ../usbstk5505_i2c.c'
+' '
+gmake: Target `all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project GuitarTuner ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../PLL.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv5/tools/compiler/arm_5.1.1/bin/armcl" -mv6 --code_state=32 --abi=ti_arm9_abi --include_path="C:/ti/ccsv5/tools/compiler/arm_5.1.1/include" -g --diag_warning=225 --display_error_number --diag_wrap=off --preproc_with_compile --preproc_dependency="PLL.pp"  "../PLL.c"
+"../PLL.c", line 69: fatal error #1965: cannot open source file "csl_pll.h"
+1 catastrophic error detected in the compilation of "../PLL.c".
+Compilation terminated.
+
+>> Compilation failure
+gmake: *** [PLL.obj] Error 1
+'Building file: ../aic3204.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv5/tools/compiler/arm_5.1.1/bin/armcl" -mv6 --code_state=32 --abi=ti_arm9_abi --include_path="C:/ti/ccsv5/tools/compiler/arm_5.1.1/include" -g --diag_warning=225 --display_error_number --diag_wrap=off --preproc_with_compile --preproc_dependency="aic3204.pp"  "../aic3204.c"
+"../aic3204.c", line 58: fatal error #1965: cannot open source file "usbstk5505.h"
+1 catastrophic error detected in the compilation of "../aic3204.c".
+Compilation terminated.
+
+>> Compilation failure
+gmake: *** [aic3204.obj] Error 1
+'Building file: ../aic3204_init.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv5/tools/compiler/arm_5.1.1/bin/armcl" -mv6 --code_state=32 --abi=ti_arm9_abi --include_path="C:/ti/ccsv5/tools/compiler/arm_5.1.1/include" -g --diag_warning=225 --display_error_number --diag_wrap=off --preproc_with_compile --preproc_dependency="aic3204_init.pp"  "../aic3204_init.c"
+"../aic3204_init.c", line 63: fatal error #1965: cannot open source file "usbstk5505.h"
+1 catastrophic error detected in the compilation of "../aic3204_init.c".
+Compilation terminated.
+
+>> Compilation failure
+gmake: *** [aic3204_init.obj] Error 1
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv5/tools/compiler/arm_5.1.1/bin/armcl" -mv6 --code_state=32 --abi=ti_arm9_abi --include_path="C:/ti/ccsv5/tools/compiler/arm_5.1.1/include" -g --diag_warning=225 --display_error_number --diag_wrap=off --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
+"../main.c", line 3: fatal error #1965: cannot open source file "aic3204.h"
+1 catastrophic error detected in the compilation of "../main.c".
+Compilation terminated.
+
+>> Compilation failure
+gmake: *** [main.obj] Error 1
+'Building file: ../usbstk5505.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv5/tools/compiler/arm_5.1.1/bin/armcl" -mv6 --code_state=32 --abi=ti_arm9_abi --include_path="C:/ti/ccsv5/tools/compiler/arm_5.1.1/include" -g --diag_warning=225 --display_error_number --diag_wrap=off --preproc_with_compile --preproc_dependency="usbstk5505.pp"  "../usbstk5505.c"
+"../usbstk5505.c", line 55: fatal error #1965: cannot open source file "usbstk5505.h"
+1 catastrophic error detected in the compilation of "../usbstk5505.c".
+Compilation terminated.
+
+>> Compilation failure
+gmake: *** [usbstk5505.obj] Error 1
+'Building file: ../usbstk5505_gpio.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv5/tools/compiler/arm_5.1.1/bin/armcl" -mv6 --code_state=32 --abi=ti_arm9_abi --include_path="C:/ti/ccsv5/tools/compiler/arm_5.1.1/include" -g --diag_warning=225 --display_error_number --diag_wrap=off --preproc_with_compile --preproc_dependency="usbstk5505_gpio.pp"  "../usbstk5505_gpio.c"
+"../usbstk5505_gpio.c", line 55: fatal error #1965: cannot open source file "usbstk5505_gpio.h"
+1 catastrophic error detected in the compilation of "../usbstk5505_gpio.c".
+Compilation terminated.
+
+>> Compilation failure
+gmake: *** [usbstk5505_gpio.obj] Error 1
+'Building file: ../usbstk5505_i2c.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv5/tools/compiler/arm_5.1.1/bin/armcl" -mv6 --code_state=32 --abi=ti_arm9_abi --include_path="C:/ti/ccsv5/tools/compiler/arm_5.1.1/include" -g --diag_warning=225 --display_error_number --diag_wrap=off --preproc_with_compile --preproc_dependency="usbstk5505_i2c.pp"  "../usbstk5505_i2c.c"
+"../usbstk5505_i2c.c", line 54: fatal error #1965: cannot open source file "usbstk5505_i2c.h"
+1 catastrophic error detected in the compilation of "../usbstk5505_i2c.c".
+Compilation terminated.
+
+>> Compilation failure
+gmake: *** [usbstk5505_i2c.obj] Error 1
+gmake: Target `all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project guitartunerproject ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../aic3204_init.c'
+'Invoking: C5500 Compiler'
+"C:/ti/ccsv5/tools/compiler/c5500_4.4.1/bin/cl55" -v5515 --memory_model=huge -g --include_path="C:/ti/ccsv5/tools/compiler/c5500_4.4.1/include" --include_path="C:/GitRepos/ECE466_Project/guitartunerproject/C55xx_csl" --include_path="C:/GitRepos/ECE466_Project/guitartunerproject/inc" --include_path="C:/GitRepos/ECE466_Project/guitartunerproject/usbstk_bsl" --define=c5505 --display_error_number --diag_warning=225 --ptrdiff_size=32 --preproc_with_compile --preproc_dependency="aic3204_init.pp"  "../aic3204_init.c"
+"../aic3204_init.c", line 152: error #148: declaration is incompatible with "unsigned long set_sampling_frequency_and_gain(unsigned long, unsigned int)" (declared at line 65 of "C:/GitRepos/ECE466_Project/guitartunerproject/inc/aic3204.h")
+
+1 error detected in the compilation of "../aic3204_init.c".
+>> Compilation failure
+gmake: *** [aic3204_init.obj] Error 1
+'Building file: ../main.c'
+'Invoking: C5500 Compiler'
+"C:/ti/ccsv5/tools/compiler/c5500_4.4.1/bin/cl55" -v5515 --memory_model=huge -g --include_path="C:/ti/ccsv5/tools/compiler/c5500_4.4.1/include" --include_path="C:/GitRepos/ECE466_Project/guitartunerproject/C55xx_csl" --include_path="C:/GitRepos/ECE466_Project/guitartunerproject/inc" --include_path="C:/GitRepos/ECE466_Project/guitartunerproject/usbstk_bsl" --define=c5505 --display_error_number --diag_warning=225 --ptrdiff_size=32 --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
+"../main.c", line 95: error #167: too few arguments in function call
+1 error detected in the compilation of "../main.c".
+
+>> Compilation failure
+gmake: *** [main.obj] Error 1
+gmake: Target `all' not remade because of errors.
+
+**** Build Finished ****
