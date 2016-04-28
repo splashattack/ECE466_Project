@@ -149,7 +149,7 @@ void aic3204_init(void)
  *                                                                          *
  * ------------------------------------------------------------------------ */
 
-unsigned long set_sampling_frequency_and_gain(unsigned int ADCgain)
+void set_sampling_frequency_and_gain(unsigned int ADCgain)
 {
     unsigned int PLLPR = 0xE1; // Default to 4000 Hz
     unsigned int gain;
